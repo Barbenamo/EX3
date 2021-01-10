@@ -58,6 +58,8 @@ The number of edges exists on the graph.<br />
 * ```has_edge```: A method to check whether are two vertices are connected via an edge.
 * ```get_node```: A method to get a specific node from the graph, using it key as identifier.
 * ```as_dict```: A metheod to transfer the graph objcet to a dictionary that customized especially for the json format.
+* ``__eq__```: A method to check whether two graphs are equal to each other, the parameters that define if they are equal are: number of nodes, and checking each node and each edge, and the number of edges.
+
 
 Part 2: advanced algorithms.
 ==========================
