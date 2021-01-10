@@ -17,14 +17,15 @@ here are the classes of this data structure:
 | DiGraph | this class contains various methods that can be used on the graph, such as adding/deleting a node, connects/disconnect vertices via edges etc. |
 | GraphAlgo|this class contains more complex method that can be apllied on the graph, such as shortest-path algorithm and Tarjan SCC algorithm.|
 
-Part1: the basis of the data structure:
-------------------------------
-The 1st part of the assignment is all about defining the components of the graph, which are the NodeData-the vertex and EdgeData-the edge.<br />
+Part 1:
+-----
+The 1st part of the assignment is all about defining the components of the graph, which are the NodeData-the vertex and EdgeData-the edge.
 The NodeData class contains various variables such as key, location, tag and info (for meta-data) and dictionaries for edges that point into the node
-and out of the node.<br />
+and out of the node.
 The EdgeData class contains variables such as weight, source and destination, info and tag.
 special algoroithms in these classese are **equals** which cheks whether two vertices or edges are the same.
-A to-String mehtod was also apllied in order to keep track, mainly for self uses.<br />
+A to-String mehtod was also apllied in order to keep track, mainly for self uses. 
+
 The class methods:
 ------------------
 **The NodeData offers these methods:**
