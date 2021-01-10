@@ -19,9 +19,9 @@ here are the classes of this data structure:
 
 Part 1:
 -----
-The 1st part of the assignment is all about defining the components of the graph, which are the NodeData-the vertex and EdgeData-the edge.
+The 1st part of the assignment is all about defining the components of the graph, which are the NodeData-the vertex and EdgeData-the edge.<br />
 The NodeData class contains various variables such as key, location, tag and info (for meta-data) and dictionaries for edges that point into the node
-and out of the node.
+and out of the node. <br />
 The EdgeData class contains variables such as weight, source and destination, info and tag.
 special algoroithms in these classese are **equals** which cheks whether two vertices or edges are the same.
 A to-String mehtod was also apllied in order to keep track, mainly for self uses. 
