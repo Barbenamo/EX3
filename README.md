@@ -17,8 +17,8 @@ here are the classes of this data structure:
 | DiGraph | this class contains various methods that can be used on the graph, such as adding/deleting a node, connects/disconnect vertices via edges etc. |
 | GraphAlgo|this class contains more complex method that can be apllied on the graph, such as shortest-path algorithm and Tarjan SCC algorithm.|
 
-Part 1:
------
+Part 1: the basis of the data-structure.
+========
 The 1st part of the assignment is all about defining the components of the graph, which are the NodeData-the vertex and EdgeData-the edge.<br />
 The NodeData class contains various variables such as key, location, tag and info (for meta-data) and dictionaries for edges that point into the node
 and out of the node. <br />
@@ -26,7 +26,7 @@ The EdgeData class contains variables such as weight, source and destination, in
 special algoroithms in these classese are **equals** which cheks whether two vertices or edges are the same.
 A to-String mehtod was also apllied in order to keep track, mainly for self uses. 
 
-The class methods:
+The components methods:
 ------------------
 **The NodeData offers these methods:**
 * ```__init__```: A constructor to initiate a NodeData object.
@@ -38,9 +38,26 @@ of the specific node.<br />
 * ```remove_guest```: A method to remove a certain edge that come into the specific node.
 * ```has_nei```: A method to check if a certain edge that comes into the node exists on the node's dictionary.
 * ```has_guest```: A method to check if a certain edge that comes out of the node exists on the node's dictionary.<br />
-**The EdgeData offers these methods:**
-* ```__init__```: A constructor to initiate the edge object.
 
+Class DiGraph:
+--------------
+After defining its components, the class DiGraph implements the GraphInterface interface.<br />
+the class contains 3 variables: a dictionary, to represent the graph.<br />
+An mc integer, to count the number of changes made on the graph.<br />
+The number of edges exists on the graph.<br />
+**The DiGraph class offers these methods:**
+* ```__init__```: A method to initiate a the class object-directed graph.
+* ```v_size```: A method to get the number of vertices on the graph.
+* ```get_all_v```: A method to get a dictionary that contains the node itself and it's key.
+* ```all_in_edges_of_node```: A method to get a dictionary that contains all of the edges that comes into a specific node.
+* ```all_out_edges_of_node```: A method to get a dictionary that contains all of the edges that comes out from a specific node.
+* ```add_edge```: A method to add an edge between two vertices, considers both the source and the destination's neighbors.
+* ```add_node```: A method to add a node to the graph, checks first if the node already exists to avoid collisons.
+* ```remove_node```: A method to remove a node from the graph, the method considers each neighbor or guest that are attached to the node.
+* ```remove_edge```: A method to disconnect two vertices by removing the edge between them, checks first wheter they were connectet before trying to remove.
+* ```has_edge```: A method to check whether are two vertices are connected via an edge.
+* ```get_node```: A method to get a specific node from the graph, using it key as identifier.
+* ```as_dict```: A metheod to transfer the graph objcet to a dictionary that customized especially for the json format.
 
 Part2: advanced algorithms.
 ==========================
