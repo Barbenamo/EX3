@@ -26,7 +26,7 @@ The EdgeData class contains variables such as weight, source and destination, in
 special algoroithms in these classese are **equals** which cheks whether two vertices or edges are the same.
 A to-String mehtod was also apllied in order to keep track, mainly for self uses. 
 
-The components methods:
+GraphElements Class methods:
 ------------------
 **The NodeData offers these methods:**
 * ```__init__```: A constructor to initiate a NodeData object.
@@ -64,13 +64,19 @@ Part2: advanced algorithms.
 The 2nd part of the assignment contains various complex algorithms.
 here are some of the special methods:
 ----------------
-1. Shortest-path: a method that calculates the shortest path between two given vertices, and retrievs a list of all the keys between them.
+* ```shortest_path```: A method that calculates the shortest path between two given vertices, and retrievs a list of all the keys between them.
 in order to calculate the shortest path between two given vertices on the graph, we used dijkstra's algorithm (DFS).<br />
-for info about this specific algorithm please visit: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm.
-2. Connected componnent and Connected componnents: a method that divides the graph to seperate groups, each group is a strongly connected sub group.
- this method uses the Tarjan's algorithms, for more information visit: [https://en.wikipedia.org/wiki/Tarjan%27s_algorithm]<br />
-3. Load and Save: methods that serialize and deserializes the graph to a json-formated file.<br />
-4. Plot-Graph: a method that uses the **matlibplot** library to plot and visualize the graph, showing it components-the vertices and the edges.
+for info about this specific algorithm please visit: [https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm].
+* ```connected_component```: a method that divides the graph to seperate groups, each group is a strongly connected sub group.
+ this method uses the Tarjan's algorithms to retrieve a single connected componnent, for more information visit: [https://en.wikipedia.org/wiki/Tarjan%27s_algorithm]<br />
+* ```connected_components```: a method that gathers all of the SCC's in the graph to a list
+* ```reset```: a method to reset every node meta-data (tag, info), after performing algorithms on the graph.
+* ```load_from_json```: a method to deserialize the graph from a given json-formated file.
+* ```save_to_json```: a method to serialize the graph to a json-formated file.
+* ```plot_graph```: a method that uses the **matlibplot** library to plot and visualize the graph, showing it components-the vertices and the edges.
+* ```dfs```: depth-first-search, an algorithm that runs from a given source or a random one, and go through every node, iteretivly.
+* ```reverse_dfs```: a method to run dfs on the reverse graph-mainly used for SCC algorithms.
+* ```fill_stack```: a recursive method to recure on a given node and change the node's info and add it to a stack. (used in SCC).
 
 
 
