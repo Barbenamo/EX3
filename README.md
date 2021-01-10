@@ -59,7 +59,7 @@ The number of edges exists on the graph.<br />
 * ```get_node```: A method to get a specific node from the graph, using it key as identifier.
 * ```as_dict```: A metheod to transfer the graph objcet to a dictionary that customized especially for the json format.
 
-Part2: advanced algorithms.
+Part 2: advanced algorithms.
 ==========================
 The 2nd part of the assignment contains various complex algorithms.
 here are some of the special methods:
