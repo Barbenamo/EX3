@@ -17,6 +17,8 @@ here are the classes of this data structure:
 | DiGraph | this class contains various methods that can be used on the graph, such as adding/deleting a node, connects/disconnect vertices via edges etc. |
 | GraphAlgo|this class contains more complex method that can be apllied on the graph, such as shortest-path algorithm and Tarjan SCC algorithm.|
 
+A schematic image explains the data-structure: ![Untitled Diagram](https://user-images.githubusercontent.com/74138342/104132133-14854980-5384-11eb-8715-5caedef0fba3.jpg)
+
 
 Part 1: the basis of the data-structure.
 ========
@@ -60,6 +62,11 @@ The number of edges exists on the graph.<br />
 * ```get_node```: A method to get a specific node from the graph, using it key as identifier.
 * ```as_dict```: A metheod to transfer the graph objcet to a dictionary that customized especially for the json format.
 * ```eq```: A method to check whether two graphs are equal to each other, the parameters that define if they are equal are: number of nodes, and checking each node and each edge, and the number of edges.
+
+Testing the DiGraph class:
+------------------
+every class that presented in this assignment were tested by the UnitTesting module.
+in order to check ourselvs, we created TestDiGraph class in order to test the DiGraph class.
 
 
 Part 2: advanced algorithms.
