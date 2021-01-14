@@ -89,5 +89,17 @@ for info about this specific algorithm please visit: [https://en.wikipedia.org/w
 * ```fill_stack```: a recursive method to recure on a given node and change the node's info and add it to a stack. (used in SCC).
 
 
+Part 3: comparing run-time.
+==========================
+
+The third part of the assignment is comparing the runtime of the following algorithms:<br />
+1. shortest-path.
+2. connected componnent.
+3. connected componnents.
+the comparsion is between our code, written in Python, our former code, written in Java and the NetworkX package.<br />
+the NetworkX package contains various algorithms for grpahs, and offers high-performace and low runtime metods.<br />
+For more information on the 3rd part visit the github's wiki page.
+
+
 
 
