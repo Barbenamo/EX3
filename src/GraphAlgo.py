@@ -14,8 +14,11 @@ import networkx as nx
 class GraphAlgo(GraphAlgoInterface):
     """This abstract class represents an interface of a graph."""
 
-    def __init__(self):
-        self.graph = DiGraph()
+     def __init__(self, graph: DiGraph = None):
+        if graph is None:
+            self.graph = DiGraph()
+        else:
+            self.graph = graph
 
     def get_graph(self) -> DiGraph:
         """
